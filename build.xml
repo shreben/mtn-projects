@@ -34,7 +34,7 @@
 		<echo message="Cleaning..."/>
 		<move file="${dist}/Labwork3.jar" todir="${basedir}"/>
 		<delete includeEmptyDirs="true">
-			<fileset dir="${basedir}"/>
+			<fileset dir="${basedir}">
 				<exclude name="**/*.jar"/>
 				<exclude name="**/*.xml"/>
 			</fileset>
