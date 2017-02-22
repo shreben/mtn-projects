@@ -33,9 +33,11 @@
 	<target name="clean">
 		<echo message="Cleaning..."/>
 		<move file="${dist}/Labwork3.jar" todir="${basedir}"/>
-		<delete dir="${basedir}" includeEmptyDirs="true">
-			<exclude name="**/*.jar"/>
-			<exclude name="**/*.xml"/>
+		<delete includeEmptyDirs="true" >
+			<fileset dir="${basedir}"/>
+				<exclude name="**/*.jar"/>
+				<exclude name="**/*.xml"/>
+			</fileset>
 		</delete>
 	</target>
 
