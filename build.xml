@@ -34,7 +34,6 @@
 
 	<target name="clean">
 		<echo message="Cleaning..."/>
-		<move file="${dist}/Labwork3.jar" todir="${basedir}"/>
 		<delete includeEmptyDirs="true">
 			<fileset dir="${basedir}">
 				<exclude name="**/*.tar.gz"/>
@@ -45,6 +44,9 @@
 
 	<target name="test" depends="dist">
 		<echo message="Running tests..."/>
+		<java jar="${dist}/Labwork3.jar" fork="true" failonerror="true"	maxmemory="128m">
+			<arg value="-h"/>
+		</java>
 		<junit printsummary="yes" fork="no" haltonfailure="no">
 			<formatter type="xml"/>
 			<classpath>
