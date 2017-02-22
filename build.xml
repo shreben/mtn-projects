@@ -32,7 +32,7 @@
 
 	<target name="clean">
 		<echo message="Cleaning..."/>
-		<move file="${build}/Labwork3.jar" todir="${basedir}"/>
+		<move file="${dist}/Labwork3.jar" todir="${basedir}"/>
 		<delete dir="${basedir}" includeEmptyDirs="true">
 			<exclude name="**/*.jar"/>
 			<exclude name="**/*.xml"/>
