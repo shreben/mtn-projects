@@ -39,10 +39,11 @@
 				<exclude name="**/*.tar.gz"/>
 				<exclude name="**/*.xml"/>
 			</fileset>
+			<fileset dir="module3" />
 		</delete>
 	</target>
 
-	<target name="test" depends="dist">
+	<target name="test">
 		<echo message="Running tests..."/>
 		<java jar="${dist}/Labwork3.jar" fork="true" failonerror="true"	maxmemory="128m">
 			<arg value="-h"/>
