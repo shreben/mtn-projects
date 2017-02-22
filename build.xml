@@ -28,6 +28,8 @@
         	                <attribute name="Main-Class" value="com.test.Project"/>
 	                </manifest>
 		</jar>
+		<tar destfile="Labwork3.tar" basedir="${dist}" includes="*.jar"/>
+		<gzip destfile="Labwork3.tar.gz" src="Labwork3.tar"/>
 	</target>
 
 	<target name="clean">
@@ -35,7 +37,7 @@
 		<move file="${dist}/Labwork3.jar" todir="${basedir}"/>
 		<delete includeEmptyDirs="true">
 			<fileset dir="${basedir}">
-				<exclude name="**/*.jar"/>
+				<exclude name="**/*.tar.gz"/>
 				<exclude name="**/*.xml"/>
 			</fileset>
 		</delete>
