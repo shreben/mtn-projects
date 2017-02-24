@@ -31,7 +31,7 @@
 		</dependency>
 	</dependencies>
 	<build>
-	<finalName>${project.artifactId}-${project.version}-${maven.build.timestamp}</finalName>
+	<finalName>${JOB_NAME}-${BUILD_NUMBER}</finalName>
 	<plugins>
 		<plugin>
 			<groupId>org.codehaus.mojo</groupId>
@@ -50,7 +50,7 @@
 				<arguments>
 					<argument>-cf</argument>
 					<argument>hreben-maven-project-1.0-SNAPSHOT.tar</argument>
-					<argument>${project.artifactId}-${project.version}-${maven.build.timestamp}.jar</argument>
+					<argument>${JOB_NAME}-${BUILD_NUMBER}.jar</argument>
 				</arguments>
 			</configuration>
 		</plugin>
