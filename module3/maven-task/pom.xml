@@ -8,7 +8,7 @@
 	<packaging>jar</packaging>
 	<version>1.0-SNAPSHOT</version>
 	<name>siarhei hreben labwork4</name>
-	<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-collections4 -->
+	<!-- test  https://mvnrepository.com/artifact/org.apache.commons/commons-collections4 -->
 	<properties>
 		<maven.build.timestamp.format>HH:mm:ss'Z'-dd-MM-yyyy</maven.build.timestamp.format>
 	</properties>
